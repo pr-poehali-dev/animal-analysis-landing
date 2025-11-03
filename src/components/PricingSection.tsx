@@ -57,16 +57,16 @@ const PricingSection = ({ activePlan, setActivePlan, onBotClick }: PricingSectio
   return (
     <section id="pricing" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Выберите тариф</h2>
-          <p className="text-xl text-muted-foreground">Прозрачные цены без скрытых платежей</p>
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Выберите тариф</h2>
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground">Прозрачные цены без скрытых платежей</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-sm sm:max-w-none mx-auto">
           {plans.map((plan, index) => (
             <Card 
               key={index} 
               className={`relative hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in border-2 ${
-                plan.popular ? 'border-primary shadow-xl scale-105' : ''
+                plan.popular ? 'border-primary shadow-xl md:scale-105' : ''
               } ${activePlan === plan.id ? 'ring-4 ring-primary/50' : ''}`}
               style={{ animationDelay: `${index * 100}ms` }}
               onClick={() => setActivePlan(plan.id)}
@@ -78,12 +78,12 @@ const PricingSection = ({ activePlan, setActivePlan, onBotClick }: PricingSectio
                   </Badge>
                 </div>
               )}
-              <CardHeader className="text-center pb-8 pt-8">
-                <CardTitle className="font-heading text-2xl mb-2">{plan.name}</CardTitle>
-                <CardDescription className="text-base">{plan.description}</CardDescription>
-                <div className="mt-6">
-                  <span className="text-5xl font-heading font-bold text-foreground">{plan.price}</span>
-                  <span className="text-xl text-muted-foreground ml-2">₽</span>
+              <CardHeader className="text-center pb-6 md:pb-8 pt-8">
+                <CardTitle className="font-heading text-xl md:text-2xl mb-2">{plan.name}</CardTitle>
+                <CardDescription className="text-sm md:text-base">{plan.description}</CardDescription>
+                <div className="mt-4 md:mt-6">
+                  <span className="text-4xl md:text-5xl font-heading font-bold text-foreground">{plan.price}</span>
+                  <span className="text-lg md:text-xl text-muted-foreground ml-2">₽</span>
                 </div>
               </CardHeader>
               <CardContent>

@@ -4,35 +4,35 @@ const Footer = () => {
   return (
     <footer className="py-12 px-4 bg-muted/50 border-t border-border">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
+          <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Icon name="Activity" className="text-primary" size={28} />
-              <span className="text-xl font-heading font-bold">СмартЛаб</span>
+              <Icon name="Activity" className="text-primary" size={24} />
+              <span className="text-lg md:text-xl font-heading font-bold">СмартЛаб</span>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs md:text-sm text-muted-foreground">
               Профессиональная расшифровка анализов животных
             </p>
           </div>
           <div>
-            <h4 className="font-heading font-semibold mb-4">Сервис</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <h4 className="font-heading font-semibold mb-3 md:mb-4 text-sm md:text-base">Сервис</h4>
+            <ul className="space-y-2 text-xs md:text-sm text-muted-foreground">
               <li><a href="#benefits" className="hover:text-primary transition-colors">Преимущества</a></li>
               <li><a href="#how-it-works" className="hover:text-primary transition-colors">Как работает</a></li>
               <li><a href="#pricing" className="hover:text-primary transition-colors">Тарифы</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-heading font-semibold mb-4">Информация</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <h4 className="font-heading font-semibold mb-3 md:mb-4 text-sm md:text-base">Информация</h4>
+            <ul className="space-y-2 text-xs md:text-sm text-muted-foreground">
               <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
               <li><a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Политика конфиденциальности</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-heading font-semibold mb-4">Контакты</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <h4 className="font-heading font-semibold mb-3 md:mb-4 text-sm md:text-base">Контакты</h4>
+            <ul className="space-y-2 text-xs md:text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Icon name="Send" size={16} />
                 <span>Telegram-бот</span>
@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+        <div className="border-t border-border pt-6 md:pt-8 text-center text-xs md:text-sm text-muted-foreground">
           <p>© 2024 СмартЛаб. Все права защищены.</p>
         </div>
       </div>

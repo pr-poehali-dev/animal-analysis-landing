@@ -31,17 +31,17 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-3xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Частые вопросы</h2>
-          <p className="text-xl text-muted-foreground">Всё, что вы хотели знать о СмартЛаб</p>
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Частые вопросы</h2>
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground">Всё, что вы хотели знать о СмартЛаб</p>
         </div>
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="text-left font-heading font-semibold text-lg hover:text-primary">
+            <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-4 md:px-6 bg-card">
+              <AccordionTrigger className="text-left font-heading font-semibold text-base md:text-lg hover:text-primary py-4">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pt-2">
+              <AccordionContent className="text-sm md:text-base text-muted-foreground pt-2 pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

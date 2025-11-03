@@ -26,11 +26,11 @@ const ReviewsSection = () => {
   return (
     <section id="reviews" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Отзывы владельцев</h2>
-          <p className="text-xl text-muted-foreground">Нам доверяют тысячи хозяев питомцев</p>
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Отзывы владельцев</h2>
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground">Нам доверяют тысячи хозяев питомцев</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {reviews.map((review, index) => (
             <Card key={index} className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2" style={{ animationDelay: `${index * 100}ms` }}>
               <CardHeader>
@@ -43,7 +43,7 @@ const ReviewsSection = () => {
                 <CardDescription>{review.pet}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground italic">"{review.text}"</p>
+                <p className="text-sm md:text-base text-muted-foreground italic">"{review.text}"</p>
               </CardContent>
             </Card>
           ))}

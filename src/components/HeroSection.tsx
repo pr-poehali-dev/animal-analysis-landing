@@ -17,42 +17,42 @@ const HeroSection = ({ onBotClick }: HeroSectionProps) => {
               <Icon name="Stethoscope" size={16} className="mr-1" />
               Доверяют тысячи владельцев
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-heading font-bold leading-tight text-foreground">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-foreground">
               Расшифровка анализов вашего питомца за 2 минуты
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground">
               Точная интерпретация результатов от команды ветеринарных врачей. Узнайте, что делать дальше и насколько это критично.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
               <Button 
                 onClick={onBotClick} 
                 size="lg" 
-                className="text-lg h-14 px-8 animate-pulse-slow shadow-lg hover:shadow-xl transition-all"
+                className="text-base md:text-lg h-12 md:h-14 px-6 md:px-8 animate-pulse-slow shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
               >
-                <Icon name="Send" size={20} className="mr-2" />
+                <Icon name="Send" size={18} className="mr-2" />
                 Расшифровать анализы
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="text-lg h-14 px-8"
+                className="text-base md:text-lg h-12 md:h-14 px-6 md:px-8 w-full sm:w-auto"
                 onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Как это работает
               </Button>
             </div>
-            <div className="flex items-center gap-8 pt-4">
-              <div>
-                <div className="text-3xl font-heading font-bold text-primary">2 мин</div>
-                <div className="text-sm text-muted-foreground">Скорость</div>
+            <div className="flex items-center justify-center sm:justify-start gap-6 md:gap-8 pt-4">
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-heading font-bold text-primary">2 мин</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Скорость</div>
               </div>
-              <div>
-                <div className="text-3xl font-heading font-bold text-secondary">100%</div>
-                <div className="text-sm text-muted-foreground">Врачи</div>
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-heading font-bold text-secondary">100%</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Врачи</div>
               </div>
-              <div>
-                <div className="text-3xl font-heading font-bold text-accent">24/7</div>
-                <div className="text-sm text-muted-foreground">Доступно</div>
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-heading font-bold text-accent">24/7</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Доступно</div>
               </div>
             </div>
           </div>

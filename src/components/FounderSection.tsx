@@ -11,11 +11,11 @@ const FounderSection = () => {
               <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-5xl font-heading font-bold text-white shadow-lg">
                 ДМ
               </div>
-              <div className="flex-1 text-left">
-                <h3 className="text-2xl font-heading font-bold mb-2">Мещеряков Дмитрий Георгиевич</h3>
-                <p className="text-lg text-primary font-semibold mb-4">Ветеринарный врач, основатель СмартЛаб</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Практикующий ветеринарный специалист с 10+ летним опытом работы. Создал СмартЛаб, чтобы сделать расшифровку анализов доступной каждому владельцу питомца. Верю, что понимание здоровья своего животного — ключ к его долгой и счастливой жизни.
+              <div className="flex-1 text-left md:text-left text-center">
+                <h3 className="text-xl md:text-2xl font-heading font-bold mb-2">Мещеряков Дмитрий Георгиевич</h3>
+                <p className="text-base md:text-lg text-primary font-semibold mb-4">Врач, основатель СмартЛаб</p>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  Практикующий врач с 10+ летним опытом работы. Совместно с командой ветеринарных специалистов создал СмартЛаб, чтобы сделать расшифровку анализов доступной каждому владельцу питомца. Верю, что понимание здоровья своего животного — ключ к его долгой и счастливой жизни.
                 </p>
               </div>
             </div>
