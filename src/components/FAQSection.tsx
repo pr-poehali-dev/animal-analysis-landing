@@ -8,7 +8,7 @@ const FAQSection = () => {
     },
     {
       question: "Может ли бот заменить визит к врачу?",
-      answer: "Нет, СмартЛаб не заменяет очный прием у ветеринара. Мы помогаем понять результаты анализов и определить, насколько срочно нужна консультация специалиста. При критических показателях мы рекомендуем немедленно обратиться к врачу."
+      answer: "Нет, Смарт Лаб не заменяет очный прием у ветеринара. Мы помогаем понять результаты анализов и определить, насколько срочно нужна консультация специалиста. При критических показателях мы рекомендуем немедленно обратиться к врачу."
     },
     {
       question: "Какие виды анализов вы расшифровываете?",
@@ -33,7 +33,7 @@ const FAQSection = () => {
       <div className="container mx-auto max-w-3xl">
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Частые вопросы</h2>
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground">Всё, что вы хотели знать о СмартЛаб</p>
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground">Всё, что вы хотели знать о Смарт <span className="text-primary">Лаб</span></p>
         </div>
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (

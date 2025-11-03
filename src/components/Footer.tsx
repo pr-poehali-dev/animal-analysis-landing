@@ -7,8 +7,10 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Icon name="Activity" className="text-primary" size={24} />
-              <span className="text-lg md:text-xl font-heading font-bold">СмартЛаб</span>
+              <img src="https://cdn.poehali.dev/files/b4ffaf12-e7b9-4fac-80c5-30b3b2f8f99e.jpg" alt="Смарт Лаб" className="h-6 w-auto" />
+              <span className="text-lg md:text-xl font-heading font-bold">
+                Смарт <span className="text-primary">Лаб</span>
+              </span>
             </div>
             <p className="text-xs md:text-sm text-muted-foreground">
               Профессиональная расшифровка анализов животных
@@ -45,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-border pt-6 md:pt-8 text-center text-xs md:text-sm text-muted-foreground">
-          <p>© 2024 СмартЛаб. Все права защищены.</p>
+          <p>© 2024 Смарт <span className="text-primary">Лаб</span>. Все права защищены.</p>
         </div>
       </div>
     </footer>

@@ -45,7 +45,7 @@ const BenefitsSection = () => {
     <section id="benefits" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 md:mb-16 animate-fade-in px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Почему СмартЛаб?</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 md:mb-4">Почему Смарт <span className="text-primary">Лаб</span>?</h2>
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
             Мы объединили опыт ветеринарных врачей и современные технологии
           </p>

@@ -10,8 +10,10 @@ const Header = ({ onBotClick }: HeaderProps) => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Icon name="Activity" className="text-primary" size={32} />
-          <span className="text-2xl font-heading font-bold text-foreground">СмартЛаб</span>
+          <img src="https://cdn.poehali.dev/files/b4ffaf12-e7b9-4fac-80c5-30b3b2f8f99e.jpg" alt="Смарт Лаб" className="h-8 w-auto" />
+          <span className="text-xl md:text-2xl font-heading font-bold text-foreground">
+            Смарт <span className="text-primary">Лаб</span>
+          </span>
         </div>
         <nav className="hidden md:flex items-center gap-6">
           <a href="#benefits" className="text-sm font-medium hover:text-primary transition-colors">Преимущества</a>
